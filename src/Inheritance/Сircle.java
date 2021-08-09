@@ -17,9 +17,5 @@ public class Сircle extends Shape {
     }
 
 //getters
-    public String getColor(){
-        return color;
-    }
-
     public double getRadius() { return radius; }
 }
