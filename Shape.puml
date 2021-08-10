@@ -1,0 +1,47 @@
+@startuml
+class Inheritance.Ellipse {
+- double semi_minor_axis
+- double semi_major_axis
++ double getSquare(double,double)
++ double getSemi_minor_axis()
++ double getSemi_major_axis()
+}
+class Inheritance.ShapeMain {
++ {static} void main(String[])
+}
+class Inheritance.Shape {
+- String name
+- String color
+- String message
++ String getSquare()
++ String getName()
++ String getColor()
+}
+class Inheritance.Rectangle {
+- double length
+- double width
++ double getSquare(double,double)
++ double getLength()
++ double getWidth()
+}
+class Inheritance.Сircle {
+- double radius
++ double getSquare(double)
++ double getRadius()
+}
+class Inheritance.Triangle {
+- double side_a
+- double side_b
+- double side_c
++ double getSquare(double,double,double)
++ double getSide_a()
++ double getSide_b()
++ double getSide_c()
+}
+
+
+Inheritance.Shape <|-- Inheritance.Ellipse
+Inheritance.Shape <|-- Inheritance.Rectangle
+Inheritance.Shape <|-- Inheritance.Сircle
+Inheritance.Shape <|-- Inheritance.Triangle
+@enduml

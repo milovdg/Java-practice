@@ -2,17 +2,16 @@ package Inheritance;
 
 public class Сircle extends Shape {
 
-    private String color;
     private double radius;
 
     //constructor
-    public Сircle(String sType, String sColor, double dRadius) {
-        super(sType, sColor);
-        dRadius = radius;
+    public Сircle(String sName, String sColor, double dRadius) {
+        super(sName, sColor, "");
+        radius = dRadius;
     }
 
     //methods
-    public double getVolume(double dRadius) {
+    public double getSquare(double dRadius) {
         return Math.PI*Math.pow(dRadius,2);
     }
 
