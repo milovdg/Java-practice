@@ -15,7 +15,7 @@ public class Guitar implements Instrument{
 
  //getter
 
-    public Integer getParameter() {
+    public double getParameter() {
         return stringsNumber;
     }
 
