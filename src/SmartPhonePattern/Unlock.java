@@ -5,10 +5,10 @@ import java.util.Map;
 
 class Node {
     private String name;
-    Map<String, Boolean> neighbors = new HashMap<String, Boolean>();
+    Map<String, Node> neighbors = new HashMap<String, Node>();
     private boolean state;
 
-    Node(String sName, Map<String, Boolean> hNeighbors, boolean bState){
+    Node(String sName, Map hNeighbors, boolean bState){
         name = sName;
         neighbors = hNeighbors;
         state = bState;
@@ -21,4 +21,9 @@ class Node {
     public boolean getState(){
         return state;
     }
+
+    public void setState(boolean bState){
+        state = bState;
+    }
+
 }
